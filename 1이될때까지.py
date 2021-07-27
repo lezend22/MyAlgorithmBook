@@ -36,3 +36,4 @@ if __name__ == '__main__':
     mySol(N, K, count)
     greedySol(N,K)
 
+    #push test
