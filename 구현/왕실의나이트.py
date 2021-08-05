@@ -1,5 +1,7 @@
 import sys
 import time
+
+start_time = time.time()
 row = ['a','b','c','d','e','f','g','h']
 pos = str(sys.stdin.readline().rstrip())
 x = ord(pos[0])
@@ -23,8 +25,10 @@ for i in d2:
             dy = y + j
             if dy >= 1 and dy <= 9:
                 count += 1
-
+finish_time = time.time()
 print(count)
+print(finish_time-start_time)
+
 
 
 
