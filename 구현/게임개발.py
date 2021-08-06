@@ -5,7 +5,7 @@ n, m = map(int, sys.stdin.readline().split())
 a, b, d = map(int, sys.stdin.readline().split())
 
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
-
+print(arr)
 dx = [0, 1, 0, -1]
 dy = [-1, 0, 1, 0]
 
