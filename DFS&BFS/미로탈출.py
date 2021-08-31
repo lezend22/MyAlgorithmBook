@@ -39,5 +39,3 @@ i, j = 0, 0
 queue.append((i,j))
 print(findPath())
 
-
-
