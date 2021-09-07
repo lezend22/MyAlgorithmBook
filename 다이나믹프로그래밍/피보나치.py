@@ -2,21 +2,24 @@ import sys
 import time
 
 d = [0] * 100
-n = 99
-
-### 반복문 형식 (바텀업)
-
-d[1], d[2] = 1, 1
-
-for i in range(3, n+1):
-    d[i] = d[i-1] + d[i-2]
-
-print(d[n])
+n = int(sys.stdin.readline())
 
 
-### 재귀형식 (탑다운)
+# ## 반복문 형식 (바텀업)
+#
+# d[0], d[1], d[2] = 0, 1, 1
+#
+# for i in range(3, n+1):
+#     d[i] = d[i-1] + d[i-2]
+#
+# print(d[n])
+
+
+## 재귀형식 (탑다운)
 
 def pibo(x):
+    if x == 0:
+        return 0
     if x == 1 or x == 2:
         return 1
     if d[x] != 0:
@@ -25,4 +28,4 @@ def pibo(x):
     return d[x]
 
 if __name__ == '__main__':
-    print(pibo(99))
+    print(pibo(n))
