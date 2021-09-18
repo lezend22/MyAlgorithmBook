@@ -1,5 +1,7 @@
 import sys
 
+### 뭔가 코드 쓰레기처럼 짠듯 루프왤케돌아
+
 n, k = map(int, sys.stdin.readline().split())
 arr = list(map(int, sys.stdin.readline().rstrip()))
 count = 0
