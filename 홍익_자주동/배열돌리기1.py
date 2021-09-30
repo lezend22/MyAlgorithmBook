@@ -1,5 +1,9 @@
 import sys
 
+### pypy
+### 리스트복사아닌 변수사용 arr변경
+### 조건 좀 잘봐 젭알,,,
+
 n, m, r = map(int, sys.stdin.readline().split())
 arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 
@@ -43,42 +47,3 @@ for i in arr:
         print(j, end=' ')
     print()
 
-#
-# direct = [0, 1, 2, 3]
-# dx = [-1, 1, 0, 0]
-# dy = [0, 0, -1, 1]
-#
-# def move(a, b, n, m):
-#
-#     while a != n and b != m:
-#
-#         for i in range(a, n-1):
-#             ny = i + dy[3]
-#             result[ny][b] = arr[i][b]
-#
-#         for j in range(b, m-1):
-#             nx = j + dx[1]
-#             result[n-1][nx] = arr[n-1][j]
-#
-#         for k in range(a+1, n):
-#             ny = k + dy[2]
-#             result[ny][m-1] = arr[k][m-1]
-#
-#         for l in range(b+1, m):
-#             nx = l + dx[0]
-#             result[a][nx] = arr[a][l]
-#
-#         a, b = a+1, b+1
-#         n, m = n-1, m-1
-#
-#
-#
-# for v in range(r):
-#     move(0, 0, n, m)
-#     arr = [item[:] for item in result]
-
-
-# for i in result:
-#     for j in i:
-#         print(j, end=' ')
-#     print()
