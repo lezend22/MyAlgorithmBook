@@ -14,13 +14,7 @@ index = []
 result = 0
 total = []
 one = 0
-for i in range(n):
-    for j in range(m):
-        if arr[i][j] == 0:
-            index.append((i, j))
-        elif arr[i][j] == 1:
-            one += 1
-l = list(combinations(index, 3))
+
 def loop():
     count = 1
     while queue:
@@ -54,11 +48,16 @@ def check(d):
         arr[a][b] = 0
     return resultNum
 
+for i in range(n):
+    for j in range(m):
+        if arr[i][j] == 0:
+            index.append((i, j))
+        elif arr[i][j] == 1:
+            one += 1
+l = list(combinations(index, 3))
+
 for i in l:
     visited = []
-    # if ((0, 1), (1, 0), (3, 5)) == i:
-    #     print(i)
-
     result = check(i)
     total.append(result)
 
