@@ -1,3 +1,6 @@
+# 슬라이딩 윈도우
+# 인형의 개수 k를 기준으로 start, end = 0, k-1
+# 윈도우를 밀면서 minimum 값을 찾는다
 import sys
 
 n, k = map(int, input().split())
