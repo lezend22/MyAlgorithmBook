@@ -3,7 +3,6 @@ from collections import deque
 
 n, m = map(int, sys.stdin.readline().split())
 graph = [[] for _ in range(n+1)]
-visited = []
 total = []
 maxC = 0
 
@@ -28,7 +27,7 @@ def bfs(i):
     return count
 
 for i in range(1, len(graph)):
-    if i not in visited and graph[i]:
+    if graph[i]:
         c = bfs(i)
         if c > maxC:
             maxC = c

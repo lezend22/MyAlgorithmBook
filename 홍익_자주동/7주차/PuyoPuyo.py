@@ -43,7 +43,7 @@ while True:
                 visited[i][j] = 1
                 popup = []
                 bfs(i, j, arr[i][j])
-                if len(popup) == 4:
+                if len(popup) > 3:
                     flag = True
                     for u in popup:
                         arr[u[0]][u[1]] = '.'
