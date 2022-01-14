@@ -1,5 +1,5 @@
 import sys
-
+from collections import defaultdict
 n = int(sys.stdin.readline())
 mosq = []
 maxt = 0
@@ -9,11 +9,22 @@ for _ in range(n):
         maxt = b
     mosq.append((a, b))
 
-arr = [0] * (maxt+1)
-for a, b in mosq:
-    for i in range(a, b):
-        if arr[i] == 0:
-            arr[i] = 1
+dp = defaultdict(int)
 
-for t in range(1,)
+for s, e in mosq:
+    dp[s] += 1
+    dp[e] -= 1
 
+
+mmt = max(dp)
+flag = 0
+start, end = -1, -1
+for i in range(len(dp)):
+    if flag == 0 and dp[i] == mmt:
+        flag = 1
+        start = i
+    elif flag == 1 and dp[i] != mmt:
+        end = i-1
+        flag = 3
+print(mmt)
+print(start, end+1)
