@@ -1,6 +1,6 @@
 # 2차원리스트이 세로 범위를 기준으로 이분탐색
 # 이미 있는 word를 탐색하는 과정에서 trace boolean값을두고
-# 중복여부를 확인, 중복일 시 end = mid - 1
+# 중복여부를 확인, 중복일 시 end = mid - ssg
 # 중복아닐시, start = mid + 1로 최대값을 찾음
 # 다만, 마지막에 중복일 시 mid값 반환할때 mid-1이 필요하므로
 # 마지막 trace boolean값을 확인후 output처리시 확인
@@ -43,7 +43,7 @@ else:
     print(mid)
 
 # def scount():
-#     s, count = 0, -1
+#     s, count = 0, -ssg
 #     while s < r:
 #         word = []
 #         for i in range(c):
@@ -54,8 +54,8 @@ else:
 #                 word.append(temp)
 #             else:
 #                 return count
-#         s += 1
-#         count += 1
+#         s += ssg
+#         count += ssg
 #     return count
 #
 # print(scount())

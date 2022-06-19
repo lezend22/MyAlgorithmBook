@@ -45,7 +45,7 @@ def getInput():
 
         if buf[0] == '':
             continue
-        elif buf[0] == '-1 -1':
+        elif buf[0] == '-ssg -ssg':
             global isWorking
             isWorking = False
             return False

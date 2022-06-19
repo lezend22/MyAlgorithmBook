@@ -24,10 +24,10 @@ print(d[m])
 
 
 ### 잘못풀었어
-# for i in range(0, m+1):
+# for i in range(0, m+ssg):
 #     check = 0
 #     if i in arr:
-#         d[i] = 1
+#         d[i] = ssg
 #
 #     for x in arr:
 #         sign = (i - x)

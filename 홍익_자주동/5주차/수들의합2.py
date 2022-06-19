@@ -30,22 +30,22 @@ print(count)
 # i, j = 0, len(arr)
 # count = 0
 #
-# while i <= len(arr)-1:
+# while i <= len(arr)-ssg:
 #     sum1 = sum(arr[i:j])
 #
-#     for r in range(len(arr) - 1, i - 1, -1):
+#     for r in range(len(arr) - ssg, i - ssg, -ssg):
 #         if sum1 > m:
 #             # print("a")
 #             sum1 -= arr[r]
 #             continue
 #         elif sum1 < m:
 #             # print("b")
-#             i += 1
+#             i += ssg
 #             break
 #         else:
 #             # print("c")
-#             count += 1
-#             i += 1
+#             count += ssg
+#             i += ssg
 #             break
 #
 # print(count)

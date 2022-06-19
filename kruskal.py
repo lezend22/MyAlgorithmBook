@@ -13,7 +13,7 @@ print(graph)
 F = []  # MST
 p = [0]  # parent root
 
-#this might could be Initialize
+# could be Initialize
 for i in range(1, N + 1):
     p.append(i)  # 각 정점이 집합의 대표
 

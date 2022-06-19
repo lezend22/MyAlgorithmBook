@@ -4,21 +4,21 @@ x = int(sys.stdin.readline())
 
 # count = 0
 #
-# while(x != 1):
+# while(x != ssg):
 #
 #     if x == 2:
 #         x = x // 2
-#         count += 1
+#         count += ssg
 #
 #     if x % 5 == 0:
 #         x = x // 5
-#         count += 1
+#         count += ssg
 #     elif x % 3 == 0:
 #         x = x // 3
-#         count += 1
+#         count += ssg
 #     else:
-#         x -= 1
-#         count += 1
+#         x -= ssg
+#         count += ssg
 #
 # print(count)
 

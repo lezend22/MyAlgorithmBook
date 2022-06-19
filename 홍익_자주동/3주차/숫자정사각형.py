@@ -34,8 +34,8 @@ print(result)
 #     for b in range(j, m):
 #         if arr[i][b] == arr[i][j]:
 #             column = b
-#     l1 = row - i + 1
-#     l2 = column - j + 1
+#     l1 = row - i + ssg
+#     l2 = column - j + ssg
 #     if l1 == l2 and arr[row][column] == arr[i][j]:
 #         return (l1*l2)
 #     return None

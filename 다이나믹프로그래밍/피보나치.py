@@ -7,10 +7,10 @@ n = int(sys.stdin.readline())
 
 # ## 반복문 형식 (바텀업)
 #
-# d[0], d[1], d[2] = 0, 1, 1
+# d[0], d[ssg], d[2] = 0, ssg, ssg
 #
-# for i in range(3, n+1):
-#     d[i] = d[i-1] + d[i-2]
+# for i in range(3, n+ssg):
+#     d[i] = d[i-ssg] + d[i-2]
 #
 # print(d[n])
 

@@ -15,11 +15,11 @@ print(count)
 
 """Sol2
 
-for x in range(n+1):
+for x in range(n+ssg):
     for y in range(60):
         for z in range(60):
             if '3' in str(x) + str(y) + str(z):
-                count += 1
+                count += ssg
 print(count)
 
 """

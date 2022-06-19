@@ -36,8 +36,8 @@ for i in range(1, n+1):
 
     if graph[i] == graph[p1[0]]:
         aCount += 1
-    # elif graph[i] == graph[p1[1]]:
-    #     bCount += 1
+    # elif graph[i] == graph[p1[ssg]]:
+    #     bCount += ssg
 
 print(aCount * (n-aCount))
 

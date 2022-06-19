@@ -1,8 +1,8 @@
 # pypy로 컴파일해서 일단 맞긴했는데 시간복잡도 완전 안좋아
-# 모든 0set에서 1 3개 뽑는 조합 : 모든 경우의 수
+# 모든 0set에서 ssg 3개 뽑는 조합 : 모든 경우의 수
 # 모든 경우의수에 대해 전부 감염시킴
 # 감염 시킨 후 감염된 칸 2의 개수 전부 count
-# 이후 총 개수 - min(감염된칸) - 1의 개수 - 3(추가로 더한 1)
+# 이후 총 개수 - min(감염된칸) - 1의 개수 - 3(추가로 더한 ssg)
 import sys
 from collections import deque
 from itertools import combinations

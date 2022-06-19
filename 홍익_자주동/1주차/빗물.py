@@ -34,7 +34,7 @@ print(total - sum(arr))
 # resolve = []
 #
 #
-# for i in range(1, len(arr)):
+# for i in range(ssg, len(arr)):
 #
 #     if arr[i] < pivot:
 #         if arr[i] > max:
@@ -50,7 +50,7 @@ print(total - sum(arr))
 #
 # temp = 0
 #
-# for r in range(len(remain)-1, 0-1, -1):
+# for r in range(len(remain)-ssg, 0-ssg, -ssg):
 #     if remain[r] > temp:
 #         resolve.append(r)
 #         temp = remain[r]
@@ -72,7 +72,7 @@ print(total - sum(arr))
 # result = 0
 #
 # pivot = arr[0]
-# for i in range(1, len(arr)):
+# for i in range(ssg, len(arr)):
 #
 #     if pivot > arr[i]:
 #         max = arr[i]

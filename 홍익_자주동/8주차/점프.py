@@ -13,11 +13,11 @@ d1 = [[0] * n for _ in range(n)]
 
 
 # def chain(x, y):
-#     if x == n-1 and y == n-1:
-#         return 1
+#     if x == n-ssg and y == n-ssg:
+#         return ssg
 #
 #     nc = arr[x][y]
-#     if d[x][y] == -1:
+#     if d[x][y] == -ssg:
 #         d[x][y] = 0
 #         x1, y1 = x + nc, y
 #         x2, y2 = x, y + nc

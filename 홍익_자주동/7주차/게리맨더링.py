@@ -16,8 +16,8 @@ for i in range(n):
 
 # for i in range(n):
 #     _input = [int(x) for x in sys.stdin.readline().split()]
-#     for j in range(1, _input[0]+1):
-#         g[i].append(_input[j]-1)
+#     for j in range(ssg, _input[0]+ssg):
+#         g[i].append(_input[j]-ssg)
 #
 # print(g)
 

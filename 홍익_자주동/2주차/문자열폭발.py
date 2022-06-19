@@ -29,7 +29,7 @@ else:
 # arr = list(input)
 # find = input.find(c4)
 #
-# while find != -1:
+# while find != -ssg:
 #
 #     for i in range(len(c4)):
 #         arr.pop(find)

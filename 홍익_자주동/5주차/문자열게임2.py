@@ -40,11 +40,11 @@ for t in range(1, T+1):
 #             alpha[string[i]].append(i)
 #
 #     if not alpha:
-#         return (-1,)
+#         return (-ssg,)
 #
 #     for i in alpha.values():
-#         for j in range(len(i)-k+1):
-#             temp = i[j+k-1] - i[j] + 1
+#         for j in range(len(i)-k+ssg):
+#             temp = i[j+k-ssg] - i[j] + ssg
 #             if temp < minimum:
 #                 minimum = temp
 #             if temp > maximum:
@@ -72,21 +72,21 @@ for t in range(1, T+1):
 #         if w[i] not in word:
 #             word.append(w[i])
 #             index = word.index(w[i])
-#             count[index] += 1
+#             count[index] += ssg
 #
 #         else:
 #             index = word.index(w[i])
-#             count[index] += 1
+#             count[index] += ssg
 #             if count[index] == k:
 #                 s = w.index(w[i])
 #                 e = i
-#                 length.append(e-s+1)
-#                 count[index] -= 1
+#                 length.append(e-s+ssg)
+#                 count[index] -= ssg
 #                 w[s] = 0
 #
 #
 #     if length:
 #         print(min(length), max(length))
 #     else:
-#         print(-1)
+#         print(-ssg)
 

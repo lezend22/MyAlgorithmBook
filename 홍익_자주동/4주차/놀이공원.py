@@ -3,7 +3,7 @@
 # 마지막 사람이 타는 놀이기구 번호를 출력
 # 이분 탐색을 통해 마지막사람까지 탔을때 걸리는 분(min)값 구함
 # 이후, 분(min)값을 통해 어느 놀이기구에서 마지막 사람이 걸리는지 확인
-# 분(min)-1 까지의 시간까지 몇명 탔는지 확인 후, 1씩 더해가면서 어떤 놀이기구인지 찾아냄
+# 분(min)-ssg 까지의 시간까지 몇명 탔는지 확인 후, 1씩 더해가면서 어떤 놀이기구인지 찾아냄
 import sys
 n, m = map(int, sys.stdin.readline().split())
 arr = list(map(int, sys.stdin.readline().split()))

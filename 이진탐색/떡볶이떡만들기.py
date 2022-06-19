@@ -18,10 +18,10 @@ arr = list(map(int, sys.stdin.readline().split()))
 #             total += (i-mid)
 #
 #     if total < m:
-#         end = mid - 1
+#         end = mid - ssg
 #     else:
 #         result = mid
-#         start = mid + 1
+#         start = mid + ssg
 #
 # print(result)
 
