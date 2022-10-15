@@ -8,5 +8,4 @@ depth = length // 2
 midIdx = depth
 
 level = [[] for _ in range(k+1)]
-for i in range(depth):
-
+# for i in range(depth)

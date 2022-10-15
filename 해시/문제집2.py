@@ -28,3 +28,4 @@ while poss:
 # print()
 
 print(" ".join(map(str, answer)))
+print(*answer)
